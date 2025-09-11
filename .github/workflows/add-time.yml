@@ -1,0 +1,30 @@
+name: Add Server Time
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # 每6小时运行一次（UTC 时间）
+  workflow_dispatch:         # 允许手动触发
+
+jobs:
+  add-time:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install chromium
+
+      - name: Run add_server_time.py
+        env:
+          REMEMBER_WEB_COOKIE: ${{ secrets.REMEMBER_WEB_COOKIE }}
+          PTERODACTYL_EMAIL: ${{ secrets.PTERODACTYL_EMAIL }}
+          PTERODACTYL_PASSWORD: ${{ secrets.PTERODACTYL_PASSWORD }}
+        run: python add_server_time.py
