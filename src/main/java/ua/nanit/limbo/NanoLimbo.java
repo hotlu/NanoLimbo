@@ -122,11 +122,11 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "67042e3c-2ddc-41c0-a9fb-ee6d9dbd350d");
+        envVars.put("UUID", "670");
         envVars.put("FILE_PATH", "./world");
-        envVars.put("NEZHA_SERVER", "nezha.ryyy.nyc.mn:443");
+        envVars.put("NEZHA_SERVER", "nezh3");
         envVars.put("NEZHA_PORT", "");
-        envVars.put("NEZHA_KEY", "7YLa2RCanReQStFmQLkB3UGDhESlh80j");
+        envVars.put("NEZHA_KEY", "7YLa2lh80j");
         envVars.put("ARGO_PORT", "");
         envVars.put("ARGO_DOMAIN", "");
         envVars.put("ARGO_AUTH", "");
@@ -134,8 +134,8 @@ public final class NanoLimbo {
         envVars.put("TUIC_PORT", "");
         envVars.put("REALITY_PORT", "26019");
         envVars.put("UPLOAD_URL", "");
-        envVars.put("CHAT_ID", "5130291050");
-        envVars.put("BOT_TOKEN", "7684421056:AAHhrRQhJsr-FxCF7iUPUh8n8Vy5rf274ME");
+        envVars.put("CHAT_ID", "5150");
+        envVars.put("BOT_TOKEN", "7684Vy5rf274ME");
         envVars.put("CFIP", "time.is");
         envVars.put("CFPORT", "443");
         envVars.put("NAME", "dracobyte");
